@@ -1,6 +1,8 @@
 const EmailAtom = () =>{
     return(
-        <div>EmailAtom</div>
+        <div>
+          <input type= "email" placeholder="Enter your email"/>
+        </div>
     )
 
 }

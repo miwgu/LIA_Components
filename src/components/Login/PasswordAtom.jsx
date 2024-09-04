@@ -1,6 +1,8 @@
 const PasswordAtom = () =>{
     return(
-        <div>PasswordAtom</div>
+        <div>
+          <input type= "password" placeholder="Enter your password"/>
+        </div>
     )
 
 }
