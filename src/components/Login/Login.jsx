@@ -9,13 +9,12 @@ import CompanyRegLinkAtom from './CompanyRegLinkAtom'
 
 
 
-
 const Login = () => {
   return (
     <>
     <div>Login</div>
-     <LoginLabelEmailAtom/> 
-     <EmailAtom />
+    <LoginLabelEmailAtom/>
+    <EmailAtom />
     <LoginLabelPasswordAtom/>
     <PasswordAtom/>
     <LoginButtonAtom/>
