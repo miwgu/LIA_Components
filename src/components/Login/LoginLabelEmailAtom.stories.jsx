@@ -5,7 +5,7 @@ export default {
   component: LoginLabelEmailAtom,
 }
 
-const Template = (args) => <LoginLabelEmailAtom{...args}/>;
+const Template = (args) => <LoginLabelEmailAtom {...args}/>;
 
 export const label = Template.bind({});
 label.args={
