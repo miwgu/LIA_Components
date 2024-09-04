@@ -2,8 +2,8 @@ import React from 'react'
 import EmailAtom from './EmailAtom'
 import PasswordAtom from './PasswordAtom'
 import LoginButtonAtom from './LoginButtonAtom'
-import LoginLabelEmailAtom from './LoginLabelEmailAtom'
-import LoginLabelPasswordAtom from './LoginLabelPasswordAtom'
+import LabelEmailAtom from './LabelEmailAtom'
+import LabelPasswordAtom from './LabelPasswordAtom'
 import StudentRegLinkAtom from './StudentRegLinkAtom'
 import CompanyRegLinkAtom from './CompanyRegLinkAtom'
 
@@ -13,9 +13,9 @@ const Login = () => {
   return (
     <>
     <div>Login</div>
-    
+    <LabelEmailAtom/>
     <EmailAtom />
-    <LoginLabelPasswordAtom/>
+    <LabelPasswordAtom/>
     <PasswordAtom/>
     <LoginButtonAtom/>
     <ul>
