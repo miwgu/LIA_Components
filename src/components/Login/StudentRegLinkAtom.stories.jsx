@@ -11,6 +11,6 @@ export const Default ={
     },
 }
 
-export const MissingTitle ={
+export const MissingLinkTitle ={
 
 }

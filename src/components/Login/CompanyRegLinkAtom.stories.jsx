@@ -7,10 +7,11 @@ export default {
 
 export const Default ={
     arg: {
+        link: "#",
         title: "Register as Company"
     },
 }
 
-export const MissingTitle ={
-    
+export const MissingLinkTitle ={
+
 }

@@ -1,13 +1,13 @@
-const StudentRegLinkAtom = ({title="Register as Student" }) =>{
+const StudentRegLinkAtom = ({link= "#", title="Register as Student" }) =>{
 
-    if (!title){
+    if (!title && link){
         return (
-            <div>You need add title for this link</div>
+            <div>You need add title and link for this link</div>
         )
 
     }
     return (
-        <a href="#">{title}</a>
+        <a href={link}>{title}</a>
 
     )
 }

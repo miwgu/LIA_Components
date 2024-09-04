@@ -1,13 +1,13 @@
-const CompanyRegLinkAtom = ({title="Register as Company"}) =>{
+const CompanyRegLinkAtom = ({link= "#",title="Register as Company"}) =>{
 
-    if(!title){
+    if(!title && link){
         return (
-            <div>You need add title for this link</div>
+            <div>You need add title and link for this link</div>
 
         )   
     }
     return (
-        <a href="#">{title}</a>
+        <a href={link}>{title}</a>
     )
 }
 
