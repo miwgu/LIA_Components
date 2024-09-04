@@ -1,8 +1,8 @@
 import React from 'react';
 
-const LoginLabelPasswordAtom = ({ label }) => {
+const LoginLabelPasswordAtom = ({ label= "Password:" }) => {
   return (
-    <label>{label}</label>
+    <label htmlFor= "password">{label}</label>
   );
 };
 

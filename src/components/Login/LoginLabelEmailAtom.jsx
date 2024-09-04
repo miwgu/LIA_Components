@@ -1,8 +1,8 @@
 import React from 'react';
 
-const LoginLabelEmailAtom = ({ label }) => {
+const LoginLabelEmailAtom = ({ label="Email:" }) => {
   return (
-    <label>{label}</label>
+    <label htmlFor= "email">{label}</label>
   );
 };
 
