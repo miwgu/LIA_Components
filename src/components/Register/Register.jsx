@@ -1,6 +1,11 @@
+import RegisterButtonAtom from './RegisterButtonAtom';
+
 const Register = () => {
   return (
-    <div>Register</div>
+    <>
+      <div>Register</div>
+      <RegisterButtonAtom/>
+    </>
   )
 }
 
