@@ -10,7 +10,7 @@ const Login = () => {
   return (
     <>
     <div>Login</div>
-    <LoginLabelEmailAtom/>
+    {/* <LoginLabelEmailAtom/> */}
     <EmailAtom />
     <PasswordAtom/>
     <LoginButtonAtom/>
