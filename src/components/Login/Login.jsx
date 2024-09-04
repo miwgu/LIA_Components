@@ -2,27 +2,29 @@ import React from 'react'
 import EmailAtom from './EmailAtom'
 import PasswordAtom from './PasswordAtom'
 import LoginButtonAtom from './LoginButtonAtom'
-import LoginLabelEmailAtom from './LoginLabelEmailAtom.stories'
-import CompanyRegLinkAtom from './CompanyRegLinkAtom'
+import LoginLabelEmailAtom from './LoginLabelEmailAtom'
+import LoginLabelPasswordAtom from './LoginLabelPasswordAtom'
 import StudentRegLinkAtom from './StudentRegLinkAtom'
+import CompanyRegLinkAtom from './CompanyRegLinkAtom'
+
+
+
 
 const Login = () => {
   return (
     <>
     <div>Login</div>
      <LoginLabelEmailAtom/> 
-    <EmailAtom />
+     <EmailAtom />
+    <LoginLabelPasswordAtom/>
     <PasswordAtom/>
     <LoginButtonAtom/>
     <ul>
-      <li>
-        <CompanyRegLinkAtom/>
-      </li>
-      <li>
-        <StudentRegLinkAtom/>
-      </li>
+        <li><StudentRegLinkAtom/></li>
+        <li><CompanyRegLinkAtom/></li>
     </ul>
-
+    
+    
     </>
 
   )
