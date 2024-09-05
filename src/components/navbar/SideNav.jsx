@@ -5,6 +5,7 @@ const SideNav = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleSideNav = () => {
+    console.log("Toggling side nav. Current state:", isOpen);
     setIsOpen(!isOpen);
   };
 

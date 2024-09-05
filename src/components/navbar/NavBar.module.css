@@ -1,0 +1,50 @@
+/* Sidenav styling */
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #333;
+  overflow-x: hidden;
+  transition: 0.3s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: white;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  background-color: #575757;
+}
+
+.closeBtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  cursor: pointer;
+  background: none;
+  border: none;
+  color: white;
+}
+
+.sidenav.open {
+  width: 250px; /* Bredden på öppnad meny */
+}
+
+/* Navbar-toggler styling */
+.navbarToggler {
+  font-size: 30px;
+  cursor: pointer;
+  background: none;
+  border: none;
+  color: black;
+  outline: none;
+}
