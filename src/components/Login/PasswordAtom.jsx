@@ -1,7 +1,9 @@
+import styles from './Login.module.css';
+
 const PasswordAtom = () =>{
     return(
         <div>
-          <input type= "password" placeholder="Enter your password" id="password"/>
+          <input className={styles.labelLogin} type= "password" placeholder="Enter your password" id="password"/>
         </div>
     )
 

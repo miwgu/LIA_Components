@@ -1,7 +1,9 @@
+import styles from './Login.module.css';
+
 const EmailAtom = () =>{
     return(
         <div>
-          <input type= "email" placeholder="Enter your email" id="email"/>
+          <input  className={styles.labelLogin} type= "email" placeholder="Enter your email" id="email"/>
         </div> 
     )
 
