@@ -1,4 +1,10 @@
 const NavBar = () => {
-  return <>Nav</>;
+  return (
+    <>
+      <dir>
+        <h1>HittaLIA</h1>
+      </dir>
+    </>
+  );
 };
 export default NavBar;
