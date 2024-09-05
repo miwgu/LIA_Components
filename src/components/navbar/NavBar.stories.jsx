@@ -1,7 +1,7 @@
 import NavBar from "./NavBar";
 
 export default {
-  title: "FRK/NavBar",
+  title: "FWK/NavBar",
   component: NavBar,
 };
 
