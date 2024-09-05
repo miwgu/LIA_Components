@@ -1,9 +1,16 @@
+import React from "react";
+import styles from "./NavBar.module.css";
+import SideNav from "./SideNav";
+import Button from "./Button";
+
 const NavBar = () => {
   return (
     <>
-      <dir>
+      <div className={styles.nav}>
+        <SideNav />
         <h1>HittaLIA</h1>
-      </dir>
+        <Button />
+      </div>
     </>
   );
 };
