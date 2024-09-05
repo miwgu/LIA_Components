@@ -1,7 +1,9 @@
+import styles from './Register.module.css'; 
+
 const FirstnameAtom = () => {
   return (
     <div>
-        <input type= "text" placeholder="Enter your firstname" id="firstname"/>
+      <input className={styles.link} type= "text" placeholder="Enter your firstname" id="firstname"/>
     </div>
   )
 }

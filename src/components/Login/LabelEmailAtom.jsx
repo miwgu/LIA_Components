@@ -1,8 +1,12 @@
 import React from 'react';
+import styles from './Login.module.css';
+
 
 const LabelEmailAtom = ({ label="Email:" }) => {
   return (
-    <label htmlFor= "email">{label}</label>
+    <div className={styles.labelLink}>
+      <label htmlFor= "email">{label}</label>
+    </div>
   );
 };
 

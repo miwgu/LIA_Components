@@ -12,11 +12,12 @@ import LastnameAtom from './LastnameAtom';
 import LinkedInAtom from './LinkedInAtom';
 import RegisterButtonAtom from './RegisterButtonAtom';
 import SalesPitchAtom from './SalesPitchAtom';
+import styles from './Register.module.css';
 
 const Register = () => {
   return (
-    <>
-      <div>Register</div>
+    <div className={styles.regContainer}>
+      <h1>Register as student</h1>
       <LabelFirstnameAtom/>
       <FirstnameAtom/>
       <LabelLastnameAtom/>
@@ -31,7 +32,7 @@ const Register = () => {
       <LinkedInAtom/>
       <RegisterButtonAtom/>
       
-    </>
+    </div>
   )
 }
 

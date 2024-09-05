@@ -1,8 +1,9 @@
 import React from 'react'
+import styles from './Register.module.css';
 
 const LabelPitchAtom = ({label="Your sales pitch:"}) => {
   return (
-    <div>
+    <div  className={styles.labelLink}>
       <label htmlFor="text">{label}</label>
     </div>
   )

@@ -1,0 +1,25 @@
+.regButton {
+  background-color: black;
+  color: white;
+  padding: 0.5rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  margin-top: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.link{
+  border: 0.1rem solid rgb(178, 178, 178);
+  padding: 0.3rem;
+  border-radius: 0.3rem;
+}
+.labelLink{
+  margin-top: 1rem;
+}
+
+.regContainer{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
