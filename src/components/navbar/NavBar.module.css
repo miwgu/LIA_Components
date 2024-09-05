@@ -1,3 +1,23 @@
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 70px;
+}
+
+.btn {
+  cursor: pointer;
+  color: white;
+  background-color: rgb(37, 35, 35);
+  font-size: 16px;
+  width: 100px;
+  height: 30px;
+  outline: none;
+  border-radius: 5px;
+}
+
 /* Sidenav styling */
 .sidenav {
   height: 100%;
