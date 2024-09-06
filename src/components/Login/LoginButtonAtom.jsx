@@ -1,3 +1,5 @@
+import styles from './Login.module.css';
+
 const LoginButtonAtom = ({title="Sign In"}) =>{
 
     if(!title){
@@ -5,8 +7,8 @@ const LoginButtonAtom = ({title="Sign In"}) =>{
             <div>You need to Add title for this button</div>
         )
     }
-    return(
-        <button>{title}</button>
+    return(       
+        <button className={styles.loginButton}>{title}</button>
     )
 }
 
