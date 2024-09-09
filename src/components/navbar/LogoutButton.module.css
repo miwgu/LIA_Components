@@ -1,0 +1,17 @@
+/* src/navbar/LogoutButton.module.css */
+.logoutButton {
+    background-color: black; 
+    color: white; 
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease; 
+  }
+  
+  .logoutButton:hover {
+    background-color: #333; 
+    transform: scale(1.05); 
+  }
+  
