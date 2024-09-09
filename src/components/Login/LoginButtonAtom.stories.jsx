@@ -1,4 +1,4 @@
-import LoginButtonAtom from "./LoginButtonAtom";
+import {LoginButtonAtom} from ".";
 
 export default {
     title: 'FWK/LoginButtonAtom',

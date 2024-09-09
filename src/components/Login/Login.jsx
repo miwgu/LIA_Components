@@ -1,11 +1,4 @@
-import React from 'react'
-import EmailAtom from './EmailAtom'
-import PasswordAtom from './PasswordAtom'
-import LoginButtonAtom from './LoginButtonAtom'
-import LabelEmailAtom from './LabelEmailAtom'
-import LabelPasswordAtom from './LabelPasswordAtom'
-import StudentRegLinkAtom from './StudentRegLinkAtom'
-import CompanyRegLinkAtom from './CompanyRegLinkAtom'
+import {LabelEmailAtom, EmailAtom, LabelPasswordAtom, PasswordAtom,LoginButtonAtom, StudentRegLinkAtom,CompanyRegLinkAtom} from ".";
 import styles from './Login.module.css';
 
 

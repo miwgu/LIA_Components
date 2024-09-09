@@ -1,5 +1,4 @@
-import React from 'react';
-import LabelPasswordAtom from './LabelPasswordAtom';
+import {LabelPasswordAtom} from '.';
 
 export default {
   title: 'FWK/LabelPasswordAtom',

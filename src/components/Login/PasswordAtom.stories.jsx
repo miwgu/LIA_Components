@@ -1,4 +1,4 @@
-import PasswordAtom from "./PasswordAtom";
+import {PasswordAtom} from ".";
 
 export default {
     title: 'FWK/PasswordAtom',

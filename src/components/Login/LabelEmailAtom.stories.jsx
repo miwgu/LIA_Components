@@ -1,4 +1,4 @@
-import LabelEmailAtom from "./LabelEmailAtom"
+import {LabelEmailAtom} from "."
 
 export default {
   title: 'FWK/LabelEmailAtom',
