@@ -4,8 +4,12 @@ import styles from './Login.module.css';
 
 const Login = () => {
   return (
+   <>
+    <div className={styles.loginText}>
+        <h1>Login</h1>
+    </div>
     <div className={styles.loginContainer}>
-    <div>Login</div>
+    
     <LabelEmailAtom/>
     <EmailAtom />
     <LabelPasswordAtom/>
@@ -16,8 +20,8 @@ const Login = () => {
         <li><CompanyRegLinkAtom/></li>
     </ul>
     
-    
     </div>
+    </>
 
   )
 }

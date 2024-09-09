@@ -17,15 +17,24 @@
   padding: 0.3rem;
   border-radius: 0.3rem;
 }
+body {
+  text-align: center;
+}
 .loginContainer{
   border: 1px solid black;
   width: fit-content;
   padding: 1rem;
   border-radius: 0.5rem;
   box-shadow: 1px 2px 3px gray;
+  margin: 0 auto;
 }
-
+.loginText{
+  text-align: center;
+  justify-content: center;
+}
 .noBullet 
 {
     list-style-type: none;
+    text-align: left;
+    padding-left: 0;
 }
