@@ -10,12 +10,13 @@
 }
 .labelLink{
   margin-top: 1rem;
-  text-align: left;
+  
 }
 .labelLogin{
   border: 0.1rem solid rgb(178, 178, 178);
   padding: 0.3rem;
   border-radius: 0.3rem;
+  
 }
 body {
   text-align: center;
