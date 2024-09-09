@@ -1,3 +1,13 @@
+.loginButton{
+  margin-top: 1rem;
+  text-align: left;
+  background-color: black;
+  color: white;
+  border-radius: 0.3rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding: 0.2rem;  
+}
 .labelLink{
   margin-top: 1rem;
   text-align: left;
@@ -6,4 +16,11 @@
   border: 0.1rem solid rgb(178, 178, 178);
   padding: 0.3rem;
   border-radius: 0.3rem;
+}
+.loginContainer{
+  border: 1px solid black;
+  width: fit-content;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 1px 2px 3px gray;
 }
