@@ -11,7 +11,7 @@ const Login = () => {
     <LabelPasswordAtom/>
     <PasswordAtom/>
     <LoginButtonAtom/>
-    <ul>
+    <ul className={styles.noBullet}>
         <li><StudentRegLinkAtom/></li>
         <li><CompanyRegLinkAtom/></li>
     </ul>
