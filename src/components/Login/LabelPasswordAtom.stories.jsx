@@ -1,4 +1,4 @@
-import {LabelPasswordAtom} from '.';
+import LabelPasswordAtom from "./LabelPasswordAtom";
 
 export default {
   title: 'FWK/LabelPasswordAtom',

@@ -1,4 +1,10 @@
-import {LabelEmailAtom, EmailAtom, LabelPasswordAtom, PasswordAtom,LoginButtonAtom, StudentRegLinkAtom,CompanyRegLinkAtom} from ".";
+import LoginButtonAtom from "./LoginButtonAtom";
+import PasswordAtom from "./PasswordAtom";
+import EmailAtom from "./EmailAtom";
+import LabelPasswordAtom from "./LabelPasswordAtom";
+import LabelEmailAtom from "./LabelEmailAtom";
+import CompanyRegLinkAtom from "./CompanyRegLinkAtom";
+import StudentRegLinkAtom from "./StudentRegLinkAtom";
 import styles from './Login.module.css';
 
 

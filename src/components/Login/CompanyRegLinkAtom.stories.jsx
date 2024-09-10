@@ -1,4 +1,4 @@
-import {CompanyRegLinkAtom} from ".";
+import CompanyRegLinkAtom from "./CompanyRegLinkAtom"
 
 export default {
     title: 'FWK/CompanyRegLinkAtom',

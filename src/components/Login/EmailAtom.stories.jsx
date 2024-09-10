@@ -1,4 +1,4 @@
-import {EmailAtom} from ".";
+import EmailAtom from "./EmailAtom"
 
 export default {
     title: 'FWK/EmailAtom',

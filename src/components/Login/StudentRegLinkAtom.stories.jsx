@@ -1,4 +1,4 @@
-import {StudentRegLinkAtom} from ".";
+import StudentRegLinkAtom from "./StudentRegLinkAtom"
 
 export default {
     title: 'FWK/StudentRegLinkAtom',
