@@ -11,6 +11,10 @@ import LabelCompanyPersonEmailAtom from './LabelCompanyPersonEmailAtom'
 import InputCompanyPersonEmailAtom from "./InputCompanyPersonEmailAtom"; 
 import LabelCompanySelectStudentTypeAtom from "./LabelCompanySelectStudentTypeAtom"
 import InputCompanySelectStudentTypeAtom from "./InputCompanySelectStudentTypeAtom"; 
+import CommentAtom from './CommentAtom';
+import LabelCommentAtom from './LabelCommentAtom'
+import LabelHomepageLinkAtom from './LabelHomepageLinkAtom';
+import HomepageLinkAtom from './HomepageLinkAtom';
 
 const RegisterCompany = () => {
   return (
@@ -26,7 +30,12 @@ const RegisterCompany = () => {
       <PasswordAtom/>
       <LabelCompanySelectStudentTypeAtom/>
       <InputCompanySelectStudentTypeAtom/>
+      <LabelCommentAtom/>
+      <CommentAtom/>
+      <LabelHomepageLinkAtom/>
+      <HomepageLinkAtom/> 
       <RegisterButtonAtom/>
+
     </div>
   )
 }
