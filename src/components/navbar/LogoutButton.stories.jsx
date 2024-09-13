@@ -2,7 +2,7 @@ import React from 'react';
 import LogoutButton from './LogoutButton';
 
 export default {
-  title: 'FWK/LogoutButton',
+  title: 'LIA/Navbar/LogoutButton',
   component: LogoutButton,
 };
 

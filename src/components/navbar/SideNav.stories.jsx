@@ -1,7 +1,7 @@
 import SideNav from "./SideNav";
 
 export default {
-  title: "FWK/SideNav",
+  title: "LIA/Navbar/SideNav",
   component: SideNav,
 };
 

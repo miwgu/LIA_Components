@@ -1,7 +1,7 @@
 import NavBar from "./NavBar";
 
 export default {
-  title: "FWK/NavBar",
+  title: "LIA/Navbar/NavBar",
   component: NavBar,
 };
 
