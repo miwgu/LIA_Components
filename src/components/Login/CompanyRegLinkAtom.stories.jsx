@@ -1,7 +1,7 @@
 import CompanyRegLinkAtom from "./CompanyRegLinkAtom"
 
 export default {
-    title: 'FWK/CompanyRegLinkAtom',
+    title: 'LIA/Login/CompanyRegLinkAtom',
     component: CompanyRegLinkAtom,
 }
 

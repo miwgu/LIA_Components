@@ -3,7 +3,7 @@ import {Login} from ".";
 
 
 export default {
-    title: 'FWK/Login',
+    title: 'LIA/Login/Login',
     component: Login,
 }
 

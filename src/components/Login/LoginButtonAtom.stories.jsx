@@ -1,7 +1,7 @@
 import LoginButtonAtom from "./LoginButtonAtom"
 
 export default {
-    title: 'FWK/LoginButtonAtom',
+    title: 'LIA/Login/LoginButtonAtom',
     component: LoginButtonAtom,
 }
 

@@ -1,7 +1,7 @@
 import StudentRegLinkAtom from "./StudentRegLinkAtom"
 
 export default {
-    title: 'FWK/StudentRegLinkAtom',
+    title: 'LIA/Login/StudentRegLinkAtom',
     component: StudentRegLinkAtom,
 }
 

@@ -1,7 +1,7 @@
 import PasswordAtom from "./PasswordAtom"
 
 export default {
-    title: 'FWK/PasswordAtom',
+    title: 'LIA/Login/PasswordAtom',
     component: PasswordAtom,
 }
 

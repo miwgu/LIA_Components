@@ -1,7 +1,7 @@
 import EmailAtom from "./EmailAtom"
 
 export default {
-    title: 'FWK/EmailAtom',
+    title: 'LIA/Login/EmailAtom',
     component: EmailAtom,
 }
 

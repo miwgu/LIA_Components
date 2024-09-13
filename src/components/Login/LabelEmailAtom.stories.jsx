@@ -1,7 +1,7 @@
 import LabelEmailAtom from "./LabelEmailAtom";
 
 export default {
-  title: 'FWK/LabelEmailAtom',
+  title: 'LIA/Login/LabelEmailAtom',
   component: LabelEmailAtom,
 }
 

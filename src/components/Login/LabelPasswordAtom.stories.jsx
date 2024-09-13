@@ -1,7 +1,7 @@
 import LabelPasswordAtom from "./LabelPasswordAtom";
 
 export default {
-  title: 'FWK/LabelPasswordAtom',
+  title: 'LIA/Login/LabelPasswordAtom',
   component: LabelPasswordAtom,
 };
 
