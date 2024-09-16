@@ -1,7 +1,7 @@
 import Register from "./Register"
 
 export default {
-    title: 'FWK/Register',
+    title: 'LIA/Register/Register',
     component: Register,
 }
 

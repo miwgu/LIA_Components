@@ -1,7 +1,7 @@
 import SalesPitchAtom from "./SalesPitchAtom";
 
 export default {
-    title: 'FWK/SalesPitchAtom',
+    title: 'LIA/Register/SalesPitchAtom',
     component: SalesPitchAtom,
 }
 

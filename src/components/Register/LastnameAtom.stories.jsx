@@ -1,7 +1,7 @@
 import LastnameAtom from "./LastnameAtom";
 
 export default {
-    title: 'FWK/LastnameAtom',
+    title: 'LIA/Register/LastnameAtom',
     component: LastnameAtom,
 }
 

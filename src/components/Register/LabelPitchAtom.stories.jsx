@@ -1,7 +1,7 @@
 import LabelPitchAtom from "./LabelPitchAtom"
 
 export default {
-  title: 'FWK/LabelPitchAtom',
+  title: 'LIA/Register/LabelPitchAtom',
   component: LabelPitchAtom,
 }
 

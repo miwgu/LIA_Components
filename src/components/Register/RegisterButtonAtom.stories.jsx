@@ -2,7 +2,7 @@ import RegisterButtonAtom from './RegisterButtonAtom';
 
 
 export default {
-    title: 'FWK/RegisterButtonAtom',
+    title: 'LIA/Register/RegisterButtonAtom',
     component: RegisterButtonAtom,
 }
 
