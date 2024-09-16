@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import TextInput from '../../atoms/textinput/TextInput';  // Justerar sökvägen till TextInput
+import TextInput from '../../atoms/textinput/TextInput';  
 import Button from '../../atoms/button/Button';   
 
 const RegistrationForm = () => {
@@ -12,7 +12,7 @@ const RegistrationForm = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Här kan vi lägga till logik för att hantera registreringen
+    
     console.log("firstname:", firstname);
     console.log("lastname:", lastname);
     console.log("Email:", email);

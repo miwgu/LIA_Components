@@ -1,4 +1,4 @@
-// src/components/atoms/button/button.jsx
+
 import React from 'react';
 
 const Button = ({ text, onClick }) => (

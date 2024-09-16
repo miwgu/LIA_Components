@@ -1,7 +1,6 @@
-// src/components/atoms/button/button.stories.jsx
-// src/components/atoms/button/button.stories.jsx
+
 import React from 'react';
-import Button from './Button'; // Importera från index.js
+import Button from './Button'; 
 
 export default {
   title: 'LIA/Atom/Button',
@@ -10,5 +9,5 @@ export default {
 
 export const Default = (args) => <Button {...args} />;
 Default.args = {
-  text: '', // Standardvärde för `text`
+  text: '', 
 };

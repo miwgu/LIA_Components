@@ -1,2 +1,2 @@
-import RegistrationForm from './RegistrationForm';  // Exporterar RegistrationForm-komponenten
+import RegistrationForm from './RegistrationForm';  
 export default RegistrationForm;
