@@ -2,7 +2,7 @@ import HomepageLinkAtom from "./HomepageLinkAtom"
 
 export default {
 
-    title: 'FWK/HomepageLink',
+    title: 'LIA/RegisterCompany/HomepageLink',
     component: HomepageLinkAtom,
 }
 

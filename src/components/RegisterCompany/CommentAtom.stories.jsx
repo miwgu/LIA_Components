@@ -1,7 +1,7 @@
 import CommentAtom from "./CommentAtom";
 
 export default {
-    title: 'FWK/CommentAtom',
+    title: 'LIA/RegisterCompany/CommentAtom',
     component: CommentAtom,
 }
 

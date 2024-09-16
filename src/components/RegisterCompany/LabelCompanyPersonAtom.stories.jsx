@@ -1,7 +1,7 @@
 import LabelCompanyPersonAtom from "./LabelCompanyPersonAtom"
 
 export default {
-  title: 'FWK/LabelCompanyPersonAtom',
+  title: 'LIA/RegisterCompany/LabelCompanyPersonAtom',
   component: LabelCompanyPersonAtom,
 }
 

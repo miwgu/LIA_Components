@@ -1,7 +1,7 @@
 import InputCompanyPersonEmailAtom from "./InputCompanyPersonEmailAtom"; 
 
 export default {
-    title: 'FWK/InputCompanyPersonEmailAtom',
+    title: 'LIA/RegisterCompany/InputCompanyPersonEmailAtom',
     component: InputCompanyPersonEmailAtom,
 }
 

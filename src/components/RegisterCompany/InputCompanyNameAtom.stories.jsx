@@ -1,7 +1,7 @@
 import InputCompanyNameAtom from "./InputCompanyNameAtom"; 
 
 export default {
-    title: 'FWK/InputCompanyNameAtom',
+    title: 'LIA/RegisterCompany/InputCompanyNameAtom',
     component: InputCompanyNameAtom,
 }
 

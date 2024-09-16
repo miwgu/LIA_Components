@@ -1,7 +1,7 @@
 import LabelCommentAtom from "./LabelCommentAtom"
 
 export default {
-  title: 'FWK/LabelCommentAtom',
+  title: 'LIA/RegisterCompany/LabelCommentAtom',
   component: LabelCommentAtom,
 }
 

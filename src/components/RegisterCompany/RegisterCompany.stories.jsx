@@ -1,7 +1,7 @@
 import RegisterCompany from "./RegisterCompany"
 
 export default {
-    title: 'FWK/RegisterCompany',
+    title: 'LIA/RegisterCompany/RegisterCompany',
     component: RegisterCompany,
 }
 

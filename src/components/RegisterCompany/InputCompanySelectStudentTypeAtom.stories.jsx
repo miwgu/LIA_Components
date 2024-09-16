@@ -1,7 +1,7 @@
 import InputCompanySelectStudentTypeAtom from "./InputCompanySelectStudentTypeAtom"; 
 
 export default {
-    title: 'FWK/InputCompanySelectStudentTypeAtom',
+    title: 'LIA/RegisterCompany/InputCompanySelectStudentTypeAtom',
     component: InputCompanySelectStudentTypeAtom,
 }
 

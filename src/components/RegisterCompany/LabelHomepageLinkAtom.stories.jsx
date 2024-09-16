@@ -2,7 +2,7 @@ import LabelHomepageLinkAtom from "./LabelHomepageLinkAtom";
 import LabelHomepageLink from "./LabelHomepageLinkAtom"
 
 export default {
-  title: 'FWK/LabelHomepageLink',
+  title: 'LIA/RegisterCompany/LabelHomepageLink',
   component: LabelHomepageLinkAtom ,
 }
 
