@@ -26,6 +26,7 @@ body {
   text-align: center;
 }
 .loginContainer{
+  min-width: 40vw;
   border: 1px solid black;
   width: fit-content;
   padding: 2rem;

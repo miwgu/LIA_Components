@@ -14,7 +14,7 @@ export const Default = {
 
 export const WirhinInitialValue ={
     args:{
-        onEmailChange: action('email-change'),
+        onEmailChange: action('email-changed'),
         initialValue: 'User1@example.com',
     }
 }

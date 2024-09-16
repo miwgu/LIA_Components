@@ -20,8 +20,7 @@ const Login = () => {
     <div className={styles.loginContainer}>
     
     <EmailAtom  onEmailChange={setEmail}/>
-    <LabelPasswordAtom/>
-    <PasswordAtom/>
+    <PasswordAtom onPasswordChange={setPassword}/>
     <LoginButtonAtom/>
     <ul className={styles.noBullet}>
         <li><StudentRegLinkAtom/></li>
