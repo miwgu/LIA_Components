@@ -2,7 +2,7 @@ import DeleteButtonAtom from './DeleteButtonAtom';
 
 
 export default {
-    title: 'FWK/DeleteButtonAtom',
+    title: 'LIA/ProfileEdit/DeleteButtonAtom',
     component: DeleteButtonAtom,
 }
 

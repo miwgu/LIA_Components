@@ -2,7 +2,7 @@ import EditButtonAtom from './EditButtonAtom';
 
 
 export default {
-    title: 'FWK/EditButtonAtom',
+    title: 'LIA/ProfileEdit/EditButtonAtom',
     component: EditButtonAtom,
 }
 

@@ -1,7 +1,7 @@
 import ProfileEdit from "./ProfileEdit"
 
 export default {
-    title: 'FWK/ProfileEdit',
+    title: 'LIA/ProfileEdit/ProfileEdit',
     component: ProfileEdit,
 }
 
