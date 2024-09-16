@@ -1,6 +1,8 @@
 import styles from './Login.module.css';
+import { useState } from 'react';
 
 const EmailAtom = ({initialValue = "",label="Email", onEmailChange}) =>{
+  const [error, setError] = useState('');
 
     if(!onEmailChange) {
         return(
@@ -16,7 +18,10 @@ const EmailAtom = ({initialValue = "",label="Email", onEmailChange}) =>{
       const email_Valid = /\S+@\S+\.\S+/.test(emailValue);
 
       if(!email_Valid) {
+        setError("Invalid email format")
        console.log("Invalid email format")
+      } else {
+        setError("");
       }
 
       onEmailChange(emailValue);
@@ -35,6 +40,7 @@ const EmailAtom = ({initialValue = "",label="Email", onEmailChange}) =>{
           id="email"
           onChange={handleChange}
           />
+          {error && <p style={{ color: '#ff0066' }}>{error}</p>}
         </div> 
     )
 
