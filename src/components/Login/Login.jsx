@@ -2,13 +2,16 @@ import LoginButtonAtom from "./LoginButtonAtom";
 import PasswordAtom from "./PasswordAtom";
 import EmailAtom from "./EmailAtom";
 import LabelPasswordAtom from "./LabelPasswordAtom";
-import LabelEmailAtom from "./LabelEmailAtom";
 import CompanyRegLinkAtom from "./CompanyRegLinkAtom";
 import StudentRegLinkAtom from "./StudentRegLinkAtom";
 import styles from './Login.module.css';
+import { useState } from "react";
 
 
 const Login = () => {
+  const [email, setEmail] = useState('');
+  const [Password, setPassword] = useState('');
+
   return (
    <>
     <div className={styles.loginText}>
@@ -16,8 +19,7 @@ const Login = () => {
     </div>
     <div className={styles.loginContainer}>
     
-    <LabelEmailAtom/>
-    <EmailAtom />
+    <EmailAtom  onEmailChange={setEmail}/>
     <LabelPasswordAtom/>
     <PasswordAtom/>
     <LoginButtonAtom/>
