@@ -1,0 +1,28 @@
+import React, {createContext, useContext, useState} from "react";
+
+const MockLoginContext = createContext();
+
+export const MockLoginProvider = ({children}) =>{
+    const [userId, setUserId] = useState(null);
+
+const mockLoginFunc =(email, password) => {
+    if(email === 'student1@example.com' && password === 'stu%1'){
+        const mockUserId = 'mock-student-1';
+        setUserId(mockUserId);
+        console.log('Mock login successful, User ID:', mockUserId );     
+    } else {
+        console.error('Mock login failed: Invalid username or password');
+    }
+};    
+
+return (
+    <MockLoginContext.Provider value={{ userId, loginFunction: mockLoginFunc }} >
+      {children}
+    </MockLoginContext.Provider>
+
+  )
+};
+
+export const useMockLogin = () => {
+    return useContext(MockLoginContext);
+};

@@ -8,9 +8,19 @@ import styles from './Login.module.css';
 import { useState } from "react";
 
 
-const Login = () => {
+const Login = ({loginFunction}) => {
   const [email, setEmail] = useState('');
-  const [Password, setPassword] = useState('');
+  const [password, setPassword] = useState('');
+
+  const handleLogin =() =>{
+    if(loginFunction) {
+      loginFunction(email, password);
+    }else {
+      console.error ('NO login function')
+      console.error('Email:', email );
+      console.error('Password:', password);
+    }
+  };
 
   return (
    <>
@@ -21,7 +31,7 @@ const Login = () => {
     
     <EmailAtom  onEmailChange={setEmail}/>
     <PasswordAtom onPasswordChange={setPassword}/>
-    <LoginButtonAtom/>
+    <LoginButtonAtom onClick={handleLogin}/>
     <ul className={styles.noBullet}>
         <li><StudentRegLinkAtom/></li>
         <li><CompanyRegLinkAtom/></li>
