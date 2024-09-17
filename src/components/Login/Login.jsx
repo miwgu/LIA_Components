@@ -7,7 +7,6 @@ import StudentRegLinkAtom from "./StudentRegLinkAtom";
 import styles from './Login.module.css';
 import { useState } from "react";
 
-
 const Login = ({loginFunction}) => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
