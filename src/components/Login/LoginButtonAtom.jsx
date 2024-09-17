@@ -1,6 +1,6 @@
 import styles from './Login.module.css';
 
-const LoginButtonAtom = ({title="Sign In"}) =>{
+const LoginButtonAtom = ({onClick,title="Sign In"}) =>{
 
     if(!title){
         return(
@@ -8,7 +8,7 @@ const LoginButtonAtom = ({title="Sign In"}) =>{
         )
     }
     return(       
-        <button className={styles.loginButton}>{title}</button>
+        <button className={styles.loginButton} onClick={onClick}>{title}</button>
     )
 }
 
