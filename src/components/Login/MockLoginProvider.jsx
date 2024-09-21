@@ -1,5 +1,6 @@
 import React, {createContext, useContext, useState, useEffect} from "react";
 import CompanyList from "../CompanyList/CompanyList";
+import StudentList from "../StudentList/StudentList";
 
 const MockLoginContext = createContext();
 
@@ -76,7 +77,7 @@ export const MockLoginProvider = ({children}) =>{
   }
 
   if(currentPage === 'studentList'){
-    return<div>Navigate to StudentList</div>
+    return  <StudentList/>
   }
 
 return (
