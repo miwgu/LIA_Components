@@ -14,3 +14,4 @@ export {default as RegisterCompany} from "./components/RegisterCompany/RegisterC
 //export {default as StudentRegLinkAtom} from "./components/Login/StudentRegLinkAtom";
 //export {default as styles} from './components/Login/Login.module.css';
 export {default as CompanyList} from './components/CompanyList/CompanyList';
+export {default as StudentList} from './components/StudentList/StudentList';
