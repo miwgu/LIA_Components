@@ -1,7 +1,7 @@
 import LinkedInAtom from "./LinkedInAtom";
 
 export default {
-    title: 'LIA/Register/LinkedInAtom',
+    title: 'LIA/RegisterStudent/LinkedInAtom',
     component: LinkedInAtom,
 }
 

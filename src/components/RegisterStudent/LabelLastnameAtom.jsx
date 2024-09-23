@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from './Register.module.css';
+import styles from './RegisterStudent.module.css'; 
 
 const LabelLastnameAtom = ({label="Last name:"}) => {
   return (

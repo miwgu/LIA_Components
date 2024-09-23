@@ -1,7 +1,7 @@
 import LabelFirstnameAtom from "./LabelFirstnameAtom"
 
 export default {
-  title: 'LIA/Register/LabelFirstnameAtom',
+  title: 'LIA/RegisterStudent/LabelFirstnameAtom',
   component: LabelFirstnameAtom,
 }
 

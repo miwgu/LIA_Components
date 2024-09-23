@@ -1,7 +1,7 @@
 import SalesPitchAtom from "./SalesPitchAtom";
 
 export default {
-    title: 'LIA/Register/SalesPitchAtom',
+    title: 'LIA/RegisterStudent/SalesPitchAtom',
     component: SalesPitchAtom,
 }
 

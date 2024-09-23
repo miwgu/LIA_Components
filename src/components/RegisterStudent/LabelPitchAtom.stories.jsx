@@ -1,7 +1,7 @@
 import LabelPitchAtom from "./LabelPitchAtom"
 
 export default {
-  title: 'LIA/Register/LabelPitchAtom',
+  title: 'LIA/RegisterStudent/LabelPitchAtom',
   component: LabelPitchAtom,
 }
 

@@ -2,7 +2,7 @@ import RegisterButtonAtom from './RegisterButtonAtom';
 
 
 export default {
-    title: 'LIA/Register/RegisterButtonAtom',
+    title: 'LIA/RegisterStudent/RegisterButtonAtom',
     component: RegisterButtonAtom,
 }
 

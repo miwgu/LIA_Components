@@ -1,4 +1,4 @@
-import styles from './Register.module.css'; 
+import styles from './RegisterStudent.module.css'; 
 
 const LinkedInAtom = () => {
   return (

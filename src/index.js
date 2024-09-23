@@ -3,7 +3,7 @@ export {default as Login} from "./components/Login/Login";
 export {MockLoginProvider, useMockLogin } from './components/Login/MockLoginProvider'; 
 export {default as NavBar} from "./components/navbar/NavBar";
 export {default as ProfileEdit} from "./components/ProfileEdit/ProfileEdit";
-export {default as Register} from "./components/Register/Register";
+export {default as RegisterStudent} from "./components/RegisterStudent/RegisterStudent";
 export {default as RegisterCompany} from "./components/RegisterCompany/RegisterCompany";
 //export {default as LoginButtonAtom} from "./components/Login/LoginButtonAtom";
 //export {default as PasswordAtom} from "./components/Login/PasswordAtom";
