@@ -7,7 +7,7 @@ export default {
 
 export const Default ={
     arg: {
-        title: "sign In", 
+        title: "Login", 
      },
 
 }

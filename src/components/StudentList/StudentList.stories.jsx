@@ -1,4 +1,4 @@
-import {StudentList} from ".";
+import StudentList from "./StudentList.jsx";
 
 export default {
     title: 'LIA/StudentList/StudentLIst',

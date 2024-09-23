@@ -1,6 +1,6 @@
 import styles from './Login.module.css';
 
-const LoginButtonAtom = ({onClick,title="Sign In"}) =>{
+const LoginButtonAtom = ({onClick,title="Login"}) =>{
 
     if(!title){
         return(

@@ -12,7 +12,7 @@ export const Default = {
     },
 };
 
-export const WirhinInitialValue ={
+export const WithinInitialValue ={
     args:{
         onPasswordChange: action('password-changed'),
         initialValue: '123&a',

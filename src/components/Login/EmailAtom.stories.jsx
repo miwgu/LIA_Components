@@ -12,7 +12,7 @@ export const Default = {
     },
 };
 
-export const WirhinInitialValue ={
+export const WithinInitialValue ={
     args:{
         onEmailChange: action('email-changed'),
         initialValue: 'User1@example.com',

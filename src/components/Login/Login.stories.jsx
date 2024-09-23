@@ -1,5 +1,5 @@
-import {Login} from ".";
-
+import Login from "./Login.jsx";
+import {MockLoginProvider} from "./MockLoginProvider.jsx";
 
 
 export default {
@@ -8,6 +8,8 @@ export default {
 }
 
 
-export const Default ={
-
-}
+export const Default =()=>(
+ <MockLoginProvider>
+    <Login/>
+ </MockLoginProvider>
+)
