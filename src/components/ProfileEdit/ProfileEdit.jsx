@@ -1,16 +1,14 @@
 import React from 'react'
 import EmailAtom from '../Login/EmailAtom';
-import LabelEmailAtom from '../Login/LabelEmailAtom';
-import LabelPasswordAtom from '../Login/LabelPasswordAtom';
 import PasswordAtom from '../Login/PasswordAtom';
-import LabelFirstnameAtom from '../Register/LabelFirstnameAtom';
-import FirstnameAtom from '../Register/FirstnameAtom';
-import LabelLastnameAtom from '../Register/LabelLastnameAtom';
-import LastnameAtom from '../Register/LastnameAtom';
-import SalesPitchAtom from '../Register/SalesPitchAtom';
-import LinkedInAtom from '../Register/LinkedInAtom';
-import LabelLinkedinAtom from '../Register/LabelLinkedinAtom';
-import LabelPitchAtom from '../Register/LabelPitchAtom';
+import LabelFirstnameAtom from '../RegisterStudent/LabelFirstnameAtom';
+import FirstnameAtom from '../RegisterStudent/FirstnameAtom';
+import LabelLastnameAtom from '../RegisterStudent/LabelLastnameAtom';
+import LastnameAtom from '../RegisterStudent/LastnameAtom';
+import SalesPitchAtom from '../RegisterStudent/SalesPitchAtom';
+import LinkedInAtom from '../RegisterStudent/LinkedInAtom';
+import LabelLinkedinAtom from '../RegisterStudent/LabelLinkedinAtom';
+import LabelPitchAtom from '../RegisterStudent/LabelPitchAtom';
 import EditButtonAtom from './EditButtonAtom';
 import DeleteButtonAtom from './DeleteButtonAtom';
 
@@ -22,9 +20,7 @@ const ProfileEdit = () => {
       <FirstnameAtom/>
       <LabelLastnameAtom/>
       <LastnameAtom/>
-      <LabelEmailAtom/>
       <EmailAtom/>
-      <LabelPasswordAtom/>
       <PasswordAtom/>
       <LabelPitchAtom/>
       <SalesPitchAtom/>

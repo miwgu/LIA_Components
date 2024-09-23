@@ -1,6 +1,4 @@
-import LabelPasswordAtom from '../Login/LabelPasswordAtom';
 import PasswordAtom from '../Login/PasswordAtom';
-import RegisterButtonAtom from '../Register/RegisterButtonAtom';
 
 import React from 'react'
 import LabelCompanyNameAtom from "./LabelCompanyNameAtom"
@@ -15,6 +13,7 @@ import CommentAtom from './CommentAtom';
 import LabelCommentAtom from './LabelCommentAtom'
 import LabelHomepageLinkAtom from './LabelHomepageLinkAtom';
 import HomepageLinkAtom from './HomepageLinkAtom';
+import RegisterButtonAtom from './RegisterButtonAtom';
 
 const RegisterCompany = () => {
   return (
@@ -26,7 +25,6 @@ const RegisterCompany = () => {
       <InputCompanyPersonAtom/>
       <LabelCompanyPersonEmailAtom/>
       <InputCompanyPersonEmailAtom/>
-      <LabelPasswordAtom/>
       <PasswordAtom/>
       <LabelCompanySelectStudentTypeAtom/>
       <InputCompanySelectStudentTypeAtom/>

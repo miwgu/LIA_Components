@@ -3,3 +3,14 @@
     padding: 0.3rem;
     border-radius: 0.3rem;
   }
+
+  .regButton {
+    background-color: rgb(6, 6, 6);
+    color: white;
+    padding: 0.5rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin-top: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+  }
