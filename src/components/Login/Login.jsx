@@ -6,7 +6,7 @@ import StudentRegLinkAtom from "./StudentRegLinkAtom";
 import styles from './Login.module.css';
 import { useState } from "react";
 
-const Login = ({loginFunction}) => {
+const Login = ({loginFunction, navToPage}) => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
 
@@ -32,8 +32,8 @@ const Login = ({loginFunction}) => {
     <PasswordAtom onPasswordChange={setPassword}/>
     <LoginButtonAtom onClick={handleLogin}/>
     <ul className={styles.noBullet}>
-        <li><StudentRegLinkAtom/></li>
-        <li><CompanyRegLinkAtom/></li>
+        <li><StudentRegLinkAtom navigation={navToPage}/></li>
+        <li><CompanyRegLinkAtom navigation={navToPage}/></li>
     </ul>
     
     </div>

@@ -1,4 +1,4 @@
-const CompanyRegLinkAtom = ({link= "#",title="Register as Company"}) =>{
+const CompanyRegLinkAtom = ({navigation,title="Register as Company"}) =>{
 
     if(!title && link){
         return (
@@ -6,8 +6,18 @@ const CompanyRegLinkAtom = ({link= "#",title="Register as Company"}) =>{
 
         )   
     }
+    const linkToRegisterCompany =(e) =>{
+    e.preventDefault();
+    navigation('registerCompany')
+    }
+
     return (
-        <a href={link}>{title}</a>
+        <a 
+        href="#"
+        onClick={linkToRegisterCompany}
+        >
+          {title}
+        </a>
     )
 }
 

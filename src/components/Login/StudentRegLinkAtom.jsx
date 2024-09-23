@@ -1,13 +1,23 @@
-const StudentRegLinkAtom = ({link= "#", title="Register as Student" }) =>{
+const StudentRegLinkAtom = ({navigation, title="Register as Student" }) =>{
 
-    if (!title && link){
+    if (!title && !navigation){
         return (
-            <div>You need add title and link for this link</div>
+            <div>You need add a title and nav function for this link</div>
         )
 
     }
+    const linkToRegisterStudent= (e) =>{
+        e.preventDefault();
+        navigation('registerStudent')
+    } 
+
     return (
-        <a href={link}>{title}</a>
+        <a 
+        href="#"
+        onClick={linkToRegisterStudent}
+        >
+            {title}
+        </a>
 
     )
 }
