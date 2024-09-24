@@ -3,6 +3,9 @@ import CompanyList from "../CompanyList/CompanyList";
 import StudentList from "../StudentList/StudentList";
 import RegisterStudent from "../RegisterStudent/RegisterStudent";
 import RegisterCompany from "../RegisterCompany/RegisterCompany";
+import Login from "../Login/Login";
+import Home from "../HomeTest/Home";// I need change after push Home
+import { PageNavigation } from "./PageNavigation";
 
 const MockLoginContext = createContext();
 
@@ -10,7 +13,8 @@ export const MockLoginProvider = ({children}) =>{
     //const [userId, setUserId] = useState(null);
     const [user, setUser] = useState(null);
     const [loggedIn, setLoggedIn] = useState(false);
-    const [currentPage, setCurrentPage] = useState("login");
+    //const [currentPage, setCurrentPage] = useState("login");
+    const {currentPage, navToPage} = PageNavigation();
 
 /* const mockLoginFunc =(email, password) => {
     if(email === 'student1@example.com' && password === 'stu%1'){
@@ -24,7 +28,14 @@ export const MockLoginProvider = ({children}) =>{
 
  useEffect (()=>{
   const loggedInUser = JSON.parse(localStorage.getItem('loggedInUserData'));
-   if(loggedInUser){
+  const currentPath = window.location.pathname;
+
+  if(currentPath === '/registerCompany' || currentPath === '/registerStudent' || currentPath === '/login'){
+    navToPage(currentPath.replace('/', ''));
+      return;
+  }
+ 
+  if(loggedInUser){
    setUser(loggedInUser)
    setLoggedIn(true)
 
@@ -37,7 +48,9 @@ export const MockLoginProvider = ({children}) =>{
     //window.history.pushState(null, '', '/studentList'); // Update URL
     navToPage('studentList')
    }
-   } 
+   } else {
+    navToPage('login')
+   }
   }, [])
 
   const users = [
@@ -80,7 +93,7 @@ export const MockLoginProvider = ({children}) =>{
     setLoggedIn,
   };
 
-  const navToPage = (page) =>{
+  /* const navToPage = (page) =>{
     setCurrentPage(page)
 
     switch(page){
@@ -99,26 +112,26 @@ export const MockLoginProvider = ({children}) =>{
       default:
         window.history.pushState(null,'','/login');
     }
-  }
+  } */
 
   
-  if(currentPage === 'companyList'){
+  if(currentPage === 'companyList')
     return <CompanyList/>
-  }
 
-  if(currentPage === 'studentList'){
+  if(currentPage === 'studentList')
     return  <StudentList/>
-  }
 
   if(currentPage === 'registerStudent')
-  {
     return <RegisterStudent/>
-  }
 
   if(currentPage === 'registerCompany')
-  {
     return <RegisterCompany/>
-  }
+ 
+  if (currentPage === 'login') 
+    return <Login loginFunction={mockLoginFunc} navToPage={navToPage} />;
+  
+  if (currentPage === 'home') 
+    return <Home />;
 
 return (
     <MockLoginContext.Provider value={{ value, loginFunction: mockLoginFunc, navToPage}} >

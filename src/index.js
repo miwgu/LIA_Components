@@ -7,3 +7,4 @@ export {default as RegisterStudent} from "./components/RegisterStudent/RegisterS
 export {default as RegisterCompany} from "./components/RegisterCompany/RegisterCompany";
 export {default as CompanyList} from './components/CompanyList/CompanyList';
 export {default as StudentList} from './components/StudentList/StudentList';
+export {default as Home} from './components/HomeTest/Home';// replace after
