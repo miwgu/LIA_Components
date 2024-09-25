@@ -10,7 +10,7 @@ import LinkedInAtom from './LinkedInAtom';
 import RegisterButtonAtom from './RegisterButtonAtom';
 import SalesPitchAtom from './SalesPitchAtom';
 import styles from './RegisterStudent.module.css';
-import { useState } from 'react'; // För att använda useState
+import { useState } from 'react'; 
 import mockData from "../../data/mockData.json";
 
 
