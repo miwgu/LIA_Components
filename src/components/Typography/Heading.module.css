@@ -1,0 +1,35 @@
+.heading1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.heading2 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #444;
+}
+
+.heading3 {
+  font-size: 1.75rem;
+  font-weight: 500;
+  color: #555;
+}
+
+.heading4 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #666;
+}
+
+.heading5 {
+  font-size: 1.25rem;
+  font-weight: normal;
+  color: #777;
+}
+
+.heading6 {
+  font-size: 1rem;
+  font-weight: normal;
+  color: #888;
+}
