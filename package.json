@@ -1,6 +1,6 @@
 {
-  "name": "fwk-22-a-components",
-  "private": true,
+  "name": "@miwgu/lia_components",
+  "private": false,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
@@ -70,5 +70,8 @@
     "dist",
     "assets/fonts",
     "README.md"
-  ]
+  ],
+  "publishConfig": {
+    "access": "public"
+  }
 }
