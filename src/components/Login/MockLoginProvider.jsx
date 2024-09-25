@@ -4,8 +4,9 @@ import StudentList from "../StudentList/StudentList";
 import RegisterStudent from "../RegisterStudent/RegisterStudent";
 import RegisterCompany from "../RegisterCompany/RegisterCompany";
 import Login from "../Login/Login";
-import Home from "../HomeTest/Home";// I need change after push Home
-import { PageNavigation } from "./PageNavigation";
+import Home  from "../HomeTest/Home";
+//import { PageNavigation } from "./PageNavigation";
+
 
 const MockLoginContext = createContext();
 
@@ -13,8 +14,8 @@ export const MockLoginProvider = ({children}) =>{
     //const [userId, setUserId] = useState(null);
     const [user, setUser] = useState(null);
     const [loggedIn, setLoggedIn] = useState(false);
-    //const [currentPage, setCurrentPage] = useState("login");
-    const {currentPage, navToPage} = PageNavigation();
+    const [currentPage, setCurrentPage] = useState("home");//login
+    //const {currentPage, navToPage} = PageNavigation();
 
 /* const mockLoginFunc =(email, password) => {
     if(email === 'student1@example.com' && password === 'stu%1'){
@@ -30,10 +31,10 @@ export const MockLoginProvider = ({children}) =>{
   const loggedInUser = JSON.parse(localStorage.getItem('loggedInUserData'));
   const currentPath = window.location.pathname;
 
-  if(currentPath === '/registerCompany' || currentPath === '/registerStudent' || currentPath === '/login'){
+   if(currentPath === '/registerCompany' || currentPath === '/registerStudent' || currentPath === '/login'){
     navToPage(currentPath.replace('/', ''));
       return;
-  }
+  } 
  
   if(loggedInUser){
    setUser(loggedInUser)
@@ -93,7 +94,7 @@ export const MockLoginProvider = ({children}) =>{
     setLoggedIn,
   };
 
-  /* const navToPage = (page) =>{
+   const navToPage = (page) =>{
     setCurrentPage(page)
 
     switch(page){
@@ -109,10 +110,16 @@ export const MockLoginProvider = ({children}) =>{
       case 'registerCompany':
         window.history.pushState(null,'','/registerCompany');
         break;
-      default:
+       /* default:
+        window.history.pushState(null,'','/login'); */ 
+       case 'login':
         window.history.pushState(null,'','/login');
-    }
-  } */
+        break;
+      case 'home':
+        default:
+        window.history.pushState(null, '', '/');
+    } 
+  } 
 
   
   if(currentPage === 'companyList')
@@ -127,11 +134,11 @@ export const MockLoginProvider = ({children}) =>{
   if(currentPage === 'registerCompany')
     return <RegisterCompany/>
  
-  if (currentPage === 'login') 
+   if (currentPage === 'login') 
     return <Login loginFunction={mockLoginFunc} navToPage={navToPage} />;
   
   if (currentPage === 'home') 
-    return <Home />;
+    return <Home/> 
 
 return (
     <MockLoginContext.Provider value={{ value, loginFunction: mockLoginFunc, navToPage}} >
