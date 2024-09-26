@@ -12,7 +12,7 @@ import SalesPitchAtom from './SalesPitchAtom';
 import styles from './RegisterStudent.module.css';
 import { useState } from 'react'; 
 import mockData from "../../data/mockData.json";
-
+import React from "react";
 
 
 

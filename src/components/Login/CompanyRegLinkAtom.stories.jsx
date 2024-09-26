@@ -1,4 +1,5 @@
 import CompanyRegLinkAtom from "./CompanyRegLinkAtom"
+import React from "react";
 
 export default {
     title: 'LIA/Login/CompanyRegLinkAtom',

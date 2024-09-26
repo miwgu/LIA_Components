@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import styles from "./NavBar.module.css";
+import React from "react";
 
 const SideNav = () => {
   const [isOpen, setIsOpen] = useState(false);

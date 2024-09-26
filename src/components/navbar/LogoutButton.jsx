@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from './LogoutButton.module.css';
+import React from "react";
 
 const LogoutButton = ({ onClick }) => {
   return (

@@ -1,5 +1,5 @@
 import LabelPitchAtom from "./LabelPitchAtom"
-
+import React from "react";
 export default {
   title: 'LIA/RegisterStudent/LabelPitchAtom',
   component: LabelPitchAtom,

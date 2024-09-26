@@ -1,4 +1,5 @@
 import styles from "./NavBar.module.css";
+import React from "react";
 
 const Button = ({ name = "Sign In" }) => {
   if (!name) {

@@ -1,4 +1,5 @@
 import LoginButtonAtom from "./LoginButtonAtom"
+import React from "react";
 
 export default {
     title: 'LIA/Login/LoginButtonAtom',

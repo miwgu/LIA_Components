@@ -1,3 +1,4 @@
+import React from "react";
 const CompanyRegLinkAtom = ({navigation,title="Register as Company"}) =>{
 
     if(!title && link){

@@ -1,5 +1,5 @@
 import styles from './RegisterStudent.module.css'; 
-
+import React from "react";
 const LinkedInAtom = () => {
   return (
     <div>

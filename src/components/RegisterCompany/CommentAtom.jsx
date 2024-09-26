@@ -1,4 +1,5 @@
 import styles from './RegisterCompany.module.css'; 
+import React from "react";
 
 const CommentAtom= () => {
   return (

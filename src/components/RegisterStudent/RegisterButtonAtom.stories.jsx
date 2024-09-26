@@ -1,5 +1,5 @@
 import RegisterButtonAtom from './RegisterButtonAtom';
-
+import React from "react";
 
 export default {
     title: 'LIA/RegisterStudent/RegisterButtonAtom',

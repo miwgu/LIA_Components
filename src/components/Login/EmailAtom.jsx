@@ -1,5 +1,6 @@
 import styles from './Login.module.css';
 import { useState } from 'react';
+import React from "react";
 
 const EmailAtom = ({label="Email", onEmailChange}) =>{
   const [error, setError] = useState('');

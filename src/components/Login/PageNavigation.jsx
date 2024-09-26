@@ -1,4 +1,5 @@
 import {useState} from "react";
+import React from "react";
 
 export const PageNavigation = () =>{
     const [currentPage, setCurrentPage] = useState('home');

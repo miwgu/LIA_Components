@@ -1,5 +1,6 @@
 import EmailAtom from "./EmailAtom"
 import { action } from '@storybook/addon-actions';
+import React from "react";
 
 export default {
     title: 'LIA/Login/EmailAtom',
