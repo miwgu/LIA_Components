@@ -1,3 +1,4 @@
+import React from "react";
 import CompanyList from "./CompanyList.jsx";
 
 export default {
