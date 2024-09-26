@@ -6,7 +6,6 @@ import RegisterCompany from "../RegisterCompany/RegisterCompany";
 import Login from "../Login/Login";
 import Home  from "../HomeTest/Home";
 import { PageNavigation } from "./PageNavigation";
-import React from "react";
 
 const MockLoginContext = createContext();
 
