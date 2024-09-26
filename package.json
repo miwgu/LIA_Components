@@ -17,7 +17,8 @@
     "chokidar": "^4.0.1",
     "micromatch": "^4.0.8",
     "react": "^18.0.0",
-    "react-dom": "^18.0.0"
+    "react-dom": "^18.0.0",
+    "react-router-dom": "^6.26.2"
   },
   "devDependencies": {
     "@babel/preset-env": "^7.25.4",
