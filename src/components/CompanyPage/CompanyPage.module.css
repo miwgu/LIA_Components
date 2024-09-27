@@ -1,0 +1,57 @@
+body{
+    width: 1000px;
+}
+.searchCompany {
+
+    border-radius: 10px;
+    margin-left: 355px;
+    margin-bottom: 5px;
+
+}
+
+.compStyle {
+    border: 3px solid black;
+    background-color: pink;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.companyList {
+    text-align: center;
+}
+
+
+.ListCompanyPartOne{
+    border: 2px solid black;
+    width: 880px;
+    height: 50px;
+    
+}
+
+.ListCompanyPartTwo{
+    border: 2px solid black;
+    width: 880px;
+    height: 50px;
+}
+
+.ListCompanyPartThree{
+    border: 2px solid black;
+    width: 880px;
+    height: 50px;
+    
+}
+
+.ListCompanyPartFour{
+    border: 2px solid black;
+    width: 880px;
+    height: 50px;
+    
+}
+
+.ListCompanyPartFive{
+    border: 2px solid black;
+    width: 880px;
+    height: 50px;
+    
+}
