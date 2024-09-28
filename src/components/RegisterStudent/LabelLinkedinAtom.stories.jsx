@@ -1,5 +1,5 @@
 import LabelLinkedinAtom from "./LabelLinkedinAtom"
-
+import React from "react";
 export default {
   title: 'LIA/RegisterStudent/LabelLinkedinAtom ',
   component: LabelLinkedinAtom ,

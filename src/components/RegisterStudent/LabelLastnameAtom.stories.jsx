@@ -1,5 +1,5 @@
 import LabelLastnameAtom from "./LabelLastnameAtom"
-
+import React from "react";
 export default {
   title: 'LIA/RegisterStudent/LabelLastnameAtom',
   component: LabelLastnameAtom,

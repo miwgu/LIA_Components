@@ -1,5 +1,6 @@
 import { Header } from './Header';
 import { fn } from '@storybook/test';
+import React from "react";
 
 export default {
   title: 'Example/Header',

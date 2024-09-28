@@ -1,7 +1,7 @@
 {
-  "name": "fwk-22-a-components",
-  "private": true,
-  "version": "0.0.0",
+  "name": "@miwgu/lia_components",
+  "private": false,
+  "version": "0.0.2",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -28,6 +28,7 @@
     "@rollup/plugin-babel": "^6.0.4",
     "@rollup/plugin-commonjs": "^28.0.0",
     "@rollup/plugin-image": "^3.0.3",
+    "@rollup/plugin-json": "^6.1.0",
     "@rollup/plugin-node-resolve": "^15.3.0",
     "@rollup/plugin-terser": "^0.4.4",
     "@storybook/addon-essentials": "^8.3.0",
@@ -71,5 +72,8 @@
     "dist",
     "assets/fonts",
     "README.md"
-  ]
+  ],
+  "publishConfig": {
+    "access": "public"
+  }
 }

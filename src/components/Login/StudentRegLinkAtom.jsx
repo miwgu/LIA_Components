@@ -1,3 +1,4 @@
+import React from "react";
 const StudentRegLinkAtom = ({navigation, title="Register as Student" }) =>{
 
     if (!title && !navigation){

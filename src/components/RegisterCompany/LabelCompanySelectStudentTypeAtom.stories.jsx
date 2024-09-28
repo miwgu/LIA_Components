@@ -1,4 +1,5 @@
 import LabelCompanySelectStudentTypeAtom from "./LabelCompanySelectStudentTypeAtom"
+import React from "react";
 
 export default {
   title: 'LIA/RegisterCompany/LabelCompanySelectStudentTypeAtom',

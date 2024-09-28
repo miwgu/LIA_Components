@@ -7,7 +7,6 @@ import Login from "../Login/Login";
 import Home  from "../HomeTest/Home";
 import { PageNavigation } from "./PageNavigation";
 
-
 const MockLoginContext = createContext();
 
 export const MockLoginProvider = ({children}) =>{

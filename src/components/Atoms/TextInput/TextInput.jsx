@@ -1,3 +1,4 @@
+import React from "react";
 const TextInput = ({ label, value, onChange, type = "text" }) => (
     <div>
       <label>{label}</label>

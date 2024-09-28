@@ -1,5 +1,5 @@
 import styles from './RegisterStudent.module.css'; 
-
+import React from "react";
 const LastnameAtom = () => {
   return (
     <div>

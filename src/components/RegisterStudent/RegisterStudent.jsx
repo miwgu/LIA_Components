@@ -15,7 +15,6 @@ import mockData from "../../data/mockData.json";
 
 
 
-
 const RegisterStudent = () => {
 
   const [firstname, setFirstname] = useState('');

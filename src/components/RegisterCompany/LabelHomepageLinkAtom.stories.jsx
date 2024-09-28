@@ -1,5 +1,6 @@
 import LabelHomepageLinkAtom from "./LabelHomepageLinkAtom";
 import LabelHomepageLink from "./LabelHomepageLinkAtom"
+import React from "react";
 
 export default {
   title: 'LIA/RegisterCompany/LabelHomepageLink',

@@ -1,4 +1,5 @@
 import StudentList from "./StudentList.jsx";
+import React from "react";
 
 export default {
     title: 'LIA/StudentList/StudentLIst',

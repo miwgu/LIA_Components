@@ -5,6 +5,7 @@ import CompanyRegLinkAtom from "./CompanyRegLinkAtom";
 import StudentRegLinkAtom from "./StudentRegLinkAtom";
 import styles from './Login.module.css';
 import { useState } from "react";
+import React from "react";
 
 const Login = ({loginFunction, navToPage}) => {
   const [email, setEmail] = useState('');

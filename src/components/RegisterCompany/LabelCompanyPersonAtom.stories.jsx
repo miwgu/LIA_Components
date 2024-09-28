@@ -1,4 +1,5 @@
 import LabelCompanyPersonAtom from "./LabelCompanyPersonAtom"
+import React from "react";
 
 export default {
   title: 'LIA/RegisterCompany/LabelCompanyPersonAtom',
