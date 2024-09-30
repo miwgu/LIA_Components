@@ -1,0 +1,26 @@
+name: My First Action
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  react_on_push:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+
+    - name: Get commit messages
+      id: get_commit_messages
+      run: |
+        git log --oneline -n 5 > commits.txt
+        echo "COMMITS=$(cat commits.txt)" >> $GITHUB_ENV
+    - name: Send message to Discord
+      uses: sebastianpopp/discord-action@releases/v2
+      with:
+        webhook: ${{ secrets.DISCORD_WEBHOOK }}
+        message: |
+          ${{ github.repository }} has been successfully pushed to main.
+          Recent commits:
+          ${{ env.COMMITS }}
