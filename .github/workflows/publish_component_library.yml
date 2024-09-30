@@ -1,0 +1,58 @@
+name: Publish Component Library
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'package.json'  # Only trigger on changes to package.json
+	  
+jobs:
+  check-version-and-publish:
+    runs-on: ubuntu-latest
+    steps:
+      # Step 0: Get a virtual machine and start a job
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0 # Important for the next step to have the complete git history
+		  
+      # Step 1: Install Node.js in our virtual machine
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+          registry-url: 'https://registry.npmjs.org/'
+
+      # Step 2: Use EndBug/version-check@v2 to check if version changed
+      - name: Check for version change
+        id: version_changed
+        uses: EndBug/version-check@v2
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          diff-search: true # Search for changes in the last commit
+		  
+      # Step 3: Install dependencies
+      - name: Install dependencies
+        run: npm install
+	
+      # Step 4: Build the component
+      - name: Build component (if needed)
+        run: npm run build
+		
+      # Step 5: Publish to npm if version changed
+      - name: Publish to NPM
+        if: steps.version_changed.outputs.changed == 'true'
+        run: npm publish
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+
+      # Step 6: Notify the team on Discord
+      - name: Notify Discord
+        if: steps.version_changed.outputs.changed == 'true'
+        env:
+          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+        run: |
+          VERSION=$(jq -r '.version' package.json)
+          LIBRARY_NAME=$(jq -r '.name' package.json)
+          MESSAGE="📦 Version $VERSION of $LIBRARY_NAME has been published to npmjs."
+          curl -X POST -H 'Content-Type: application/json' --data "{\"content\":\"${MESSAGE}\"}" $DISCORD_WEBHOOK_URL
