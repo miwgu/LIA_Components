@@ -7,11 +7,11 @@ export const PageNavigation = () =>{
         setCurrentPage(page)
     
         switch(page){
-          case 'companyList':
-            window.history.pushState(null,'','/companyList');
+          case 'companyPage':
+            window.history.pushState(null,'','/companyPage');
             break;
-          case 'studentList':
-            window.history.pushState(null,'','/studentList');
+          case 'studentPage':
+            window.history.pushState(null,'','/studentPage');
             break;
           case 'registerStudent':
             window.history.pushState(null,'', '/registerStudent');

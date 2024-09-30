@@ -2,7 +2,7 @@ import React from 'react'
 import LabelSearchCompanyAtom from "./LabelSearchCompanyAtom";
 
 export default {
-  title: 'FWK/LabelSearchCompanyAtom',
+  title: 'LIA/CompanyPage/LabelSearchCompanyAtom',
   component: LabelSearchCompanyAtom,
 }
 

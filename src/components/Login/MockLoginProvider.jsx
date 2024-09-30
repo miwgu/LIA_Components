@@ -1,6 +1,6 @@
 import React, {createContext, useContext, useState, useEffect} from "react";
-import CompanyList from "../CompanyList/CompanyList";
-import StudentList from "../StudentList/StudentList";
+import CompanyPage from "../CompanyPage/CompanyPage";
+import StudentPage from "../StudentPage/StudentPage";
 import RegisterStudent from "../RegisterStudent/RegisterStudent";
 import RegisterCompany from "../RegisterCompany/RegisterCompany";
 import Login from "../Login/Login";
@@ -40,13 +40,13 @@ export const MockLoginProvider = ({children}) =>{
    setLoggedIn(true)
 
    if(loggedInUser.role=== 'student'){
-     //setCurrentPage('companyList')
-     //window.history.pushState(null, '', '/companyList'); // Update URL
-     navToPage('companyList')
+     //setCurrentPage('companyPage')
+     //window.history.pushState(null, '', '/companyPage'); // Update URL
+     navToPage('companyPage')
    } else{
-    //setCurrentPage('studentList')
-    //window.history.pushState(null, '', '/studentList'); // Update URL
-    navToPage('studentList')
+    //setCurrentPage('studentPage')
+    //window.history.pushState(null, '', '/studentPage'); // Update URL
+    navToPage('studentPage')
    }
    } else {
     navToPage('login')
@@ -71,15 +71,15 @@ export const MockLoginProvider = ({children}) =>{
         console.log('Mock login successful!');   
         
         if (user.role === "student"){
-            console.log("Navigate to /company-list")
-            //setCurrentPage('companyList')
-            navToPage('companyList')
+            console.log("Navigate to /company-page")
+            //setCurrentPage('companyPage')
+            navToPage('companyPage')
              
         } else {
-            //navigate ('/student-list')
-            console.log("Navigate to /student-list")
-            //setCurrentPage('studentList')
-            navToPage('studentList')
+            //navigate ('/student-page')
+            console.log("Navigate to /student-page")
+            //setCurrentPage('studentPage')
+            navToPage('studentPage')
         }
     } else {
         console.error('Mock login failed: Invalid username or password');
@@ -97,11 +97,11 @@ export const MockLoginProvider = ({children}) =>{
     setCurrentPage(page)
 
     switch(page){
-      case 'companyList':
-        window.history.pushState(null,'','/companyList');
+      case 'companyPage':
+        window.history.pushState(null,'','/companyPage');
         break;
-      case 'studentList':
-        window.history.pushState(null,'','/studentList');
+      case 'studentPage':
+        window.history.pushState(null,'','/studentPage');
         break;
       case 'registerStudent':
         window.history.pushState(null,'', '/registerStudent');
@@ -120,11 +120,11 @@ export const MockLoginProvider = ({children}) =>{
   } 
  */
   
-  if(currentPage === 'companyList')
-    return <CompanyList/>
+  if(currentPage === 'companyPage')
+    return <CompanyPage/>
 
-  if(currentPage === 'studentList')
-    return  <StudentList/>
+  if(currentPage === 'studentPage')
+    return  <StudentPage/>
 
   if(currentPage === 'registerStudent')
     return <RegisterStudent/>

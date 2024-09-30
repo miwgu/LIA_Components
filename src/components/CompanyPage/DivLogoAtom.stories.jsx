@@ -1,8 +1,8 @@
 import React from 'react'
-import CompanyPage from "./CompanyPage"
+import DivLogoAtom from './DivLogoAtom'
 
 export default {
-    title: 'FWK/DivLogoAtom',
+    title: 'LIA/CompanyPage/DivLogoAtom',
     component: DivLogoAtom,
 }
 
