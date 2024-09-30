@@ -2,7 +2,7 @@ import React from 'react'
 import CompanyPage from "./CompanyPage"
 
 export default {
-    title: 'LIA/CompanyPage/CompanyPage',
+    title: 'LIA/CompanyPage/CompanyListAtom',
     component: CompanyPage,
 }
 

@@ -12,7 +12,7 @@ const CompanyPage = () => {
 
 <div>
         <MoreButtonAtom/>
-        <DivLogoAtom/>
+        {/* <DivLogoAtom/> */}
         <h2 className = {styles.companyList}> Company List</h2>
         <LabelSearchCompany/>
         <SearchCompanyInputAtom />
