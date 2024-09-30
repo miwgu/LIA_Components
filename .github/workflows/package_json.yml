@@ -1,0 +1,19 @@
+name: package.json update
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'package.json'
+
+jobs:
+  notify-discord:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Send Discord Notification
+        run: |
+          curl -H "Content-Type: application/json" \
+          -X POST \
+          -d "{\"content\": \"🚨 **package.json updated on main branch** by ${{ github.actor }}. Commit: ${{ github.sha }}.\"}" \
+          ${{ secrets.DISCORD_WEBHOOK }}
