@@ -6,7 +6,7 @@ on:
       - main
     paths:
       - 'package.json'  # Only trigger on changes to package.json
-	  
+
 jobs:
   check-version-and-publish:
     runs-on: ubuntu-latest
@@ -14,8 +14,8 @@ jobs:
       # Step 0: Get a virtual machine and start a job
       - uses: actions/checkout@v3
         with:
-          fetch-depth: 0 # Important for the next step to have the complete git history
-		  
+          fetch-depth: 0  # Important for the next step to have the complete git history
+
       # Step 1: Install Node.js in our virtual machine
       - name: Setup Node.js
         uses: actions/setup-node@v3
@@ -29,16 +29,16 @@ jobs:
         uses: EndBug/version-check@v2
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          diff-search: true # Search for changes in the last commit
-		  
+          diff-search: true  # Search for changes in the last commit
+
       # Step 3: Install dependencies
       - name: Install dependencies
         run: npm install
-	
+
       # Step 4: Build the component
       - name: Build component (if needed)
         run: npm run build
-		
+
       # Step 5: Publish to npm if version changed
       - name: Publish to NPM
         if: steps.version_changed.outputs.changed == 'true'
