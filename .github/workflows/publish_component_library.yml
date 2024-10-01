@@ -50,9 +50,9 @@ jobs:
       - name: Notify Discord
         if: steps.version_changed.outputs.changed == 'true'
         env:
-          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK }}
         run: |
           VERSION=$(jq -r '.version' package.json)
           LIBRARY_NAME=$(jq -r '.name' package.json)
           MESSAGE="📦 Version $VERSION of $LIBRARY_NAME has been published to npmjs."
-          curl -X POST -H 'Content-Type: application/json' --data "{\"content\":\"${MESSAGE}\"}" $DISCORD_WEBHOOK_URL
+          curl -X POST -H 'Content-Type: application/json' --data "{\"content\":\"${MESSAGE}\"}" $DISCORD_WEBHOOK
