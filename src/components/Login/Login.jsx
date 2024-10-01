@@ -21,7 +21,7 @@ const Login = ({loginFunction, navToPage}) => {
     }
   };
 
-//test2 git action 
+//test3 git action 
   return (
    <>
     <div className={styles.loginText}>
