@@ -1,4 +1,5 @@
 import MoreButtonAtom from './MoreButtonAtom'
+import {action} from '@storybook/addon-actions'
 
 export default {
     title: 'LIA/CompanyPage/MoreButtonAtom',
@@ -7,8 +8,10 @@ export default {
 
 export const Default = {
     args: {
-        title: "More"
+        title: "More",
+        onClick: action ('button-clicked'),
      },
 };
+
 
 

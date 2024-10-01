@@ -1,5 +1,6 @@
+import React from 'react'
 import CompanyPage from "./CompanyPage.jsx";
-import React from "react";
+
 
 export default {
     title: 'LIA/CompanyPage/CompanyPage',

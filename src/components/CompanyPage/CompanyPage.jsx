@@ -4,6 +4,7 @@ import SearchCompanyInputAtom from './SearchCompanyInputAtom'
 import MoreButtonAtom from './MoreButtonAtom'
 import styles from './CompanyPage.module.css'
 import CompanyCards from './Cards'
+import CompanyList from './CompanyList'
 
 
 const CompanyPage = () => {
@@ -20,6 +21,7 @@ const CompanyPage = () => {
     <LabelSearchCompany/>
     <SearchCompanyInputAtom />
     <CompanyCards/>
+    <CompanyList/>
    
   </div>      
         
