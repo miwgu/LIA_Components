@@ -73,6 +73,8 @@ export const MockLoginProvider = ({children}) =>{
             console.log("Navigate to /student-page")
             navToPage('studentPage')
         } 
+        // Force refresh to ensure correct page load
+        window.location.reload();
     } else {
         console.error('Mock login failed: Invalid username or password');
     }
