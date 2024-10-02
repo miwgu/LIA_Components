@@ -65,14 +65,14 @@ export const MockLoginProvider = ({children}) =>{
         //setUserId(mockUserId);
         console.log('Mock login successful!');   
         
-/*         if (user.role === "student"){
+         if (user.role === "student"){
             console.log("Navigate to /company-page")
             navToPage('companyPage')
              
         } else {
             console.log("Navigate to /student-page")
             navToPage('studentPage')
-        } */
+        } 
     } else {
         console.error('Mock login failed: Invalid username or password');
     }
