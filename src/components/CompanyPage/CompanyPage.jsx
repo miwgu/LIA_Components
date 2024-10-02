@@ -1,7 +1,7 @@
 import React from 'react'
 import LabelSearchCompany from './LabelSearchCompanyAtom'
 import SearchCompanyInputAtom from './SearchCompanyInputAtom'
-import MoreButtonAtom from './MoreButtonAtom'
+//import MoreButtonAtom from './MoreButtonAtom'
 import styles from './CompanyPage.module.css'
 import CompanyCards from './Cards'
 import CompanyList from './CompanyList'
@@ -17,7 +17,7 @@ const CompanyPage = () => {
     <h1 className = {styles.companyPage}> Company Page
     </h1>
     
-    <MoreButtonAtom/>
+    {/* <MoreButtonAtom/> */}
     <LabelSearchCompany/>
     <SearchCompanyInputAtom />
     <CompanyCards/>

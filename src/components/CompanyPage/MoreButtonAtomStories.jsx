@@ -1,4 +1,4 @@
-import MoreButtonAtom from './MoreButtonAtom'
+/* import MoreButtonAtom from './MoreButtonAtom'
 import {action} from '@storybook/addon-actions'
 
 export default {
@@ -11,7 +11,7 @@ export const Default = {
         title: "More",
         onClick: action ('button-clicked'),
      },
-};
+}; */
 
 
 
