@@ -10,7 +10,7 @@ Följ dessa steg för att snabbt komma igång och köra komponentbiblioteket:
 
 1. Klona repositoryt:
   ```bash
-   git clone https://github.com/ShirinAziz/fwk-22-a-components.git
+   git clone https://github.com/miwgu/LIA_Components.git
    cd fwk-22-a-components
 
    Installera beroenden:
