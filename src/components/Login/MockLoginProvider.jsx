@@ -5,7 +5,7 @@ import RegisterStudent from "../RegisterStudent/RegisterStudent";
 import RegisterCompany from "../RegisterCompany/RegisterCompany";
 import Login from "../Login/Login";
 import Home  from "../HomeTest/Home";
-import { PageNavigation } from "./PageNavigation";
+//import { PageNavigation } from "./PageNavigation";
 
 const MockLoginContext = createContext();
 
@@ -14,7 +14,7 @@ export const MockLoginProvider = ({children}) =>{
     const [user, setUser] = useState(null);
     const [loggedIn, setLoggedIn] = useState(false);
     //const [currentPage, setCurrentPage] = useState("home");//login
-    const {currentPage, navToPage} = PageNavigation();
+    //const {currentPage, navToPage} = PageNavigation();
 
 /* const mockLoginFunc =(email, password) => {
     if(email === 'student1@example.com' && password === 'stu%1'){
@@ -28,29 +28,24 @@ export const MockLoginProvider = ({children}) =>{
 
  useEffect (()=>{
   const loggedInUser = JSON.parse(localStorage.getItem('loggedInUserData'));
-  const currentPath = window.location.pathname;
+  //const currentPath = window.location.pathname;
 
-   if(currentPath === '/registerCompany' || currentPath === '/registerStudent' || currentPath === '/login'){
-    navToPage(currentPath.replace('/', ''));
-      return;
+/*    if(currentPath) {
+      navToPage(currentPath);
   } 
- 
+  */
   if(loggedInUser){
    setUser(loggedInUser)
    setLoggedIn(true)
-
-   if(loggedInUser.role=== 'student'){
-     //setCurrentPage('companyPage')
-     //window.history.pushState(null, '', '/companyPage'); // Update URL
+  }
+/*    if(loggedInUser.role=== 'student'){
      navToPage('companyPage')
    } else{
-    //setCurrentPage('studentPage')
-    //window.history.pushState(null, '', '/studentPage'); // Update URL
     navToPage('studentPage')
    }
    } else {
     navToPage('login')
-   }
+   } */
   }, [])
 
   const users = [
@@ -70,28 +65,24 @@ export const MockLoginProvider = ({children}) =>{
         //setUserId(mockUserId);
         console.log('Mock login successful!');   
         
-        if (user.role === "student"){
+/*         if (user.role === "student"){
             console.log("Navigate to /company-page")
-            //setCurrentPage('companyPage')
             navToPage('companyPage')
              
         } else {
-            //navigate ('/student-page')
             console.log("Navigate to /student-page")
-            //setCurrentPage('studentPage')
             navToPage('studentPage')
-        }
+        } */
     } else {
         console.error('Mock login failed: Invalid username or password');
     }
   }
 
-  const value = {
+   const value = {
     user,
-    setUser,
     loggedIn,
-    setLoggedIn,
-  };
+    mockLoginFunc,
+    }; 
 
 /*    const navToPage = (page) =>{
     setCurrentPage(page)
@@ -120,7 +111,7 @@ export const MockLoginProvider = ({children}) =>{
   } 
  */
   
-  if(currentPage === 'companyPage')
+/*   if(currentPage === 'companyPage')
     return <CompanyPage/>
 
   if(currentPage === 'studentPage')
@@ -137,9 +128,9 @@ export const MockLoginProvider = ({children}) =>{
   
   if (currentPage === 'home') 
     return <Home/> 
-
+ */
 return (
-    <MockLoginContext.Provider value={{ value, loginFunction: mockLoginFunc, navToPage}} >
+    <MockLoginContext.Provider value={value} >
       {children}
     </MockLoginContext.Provider>
 
