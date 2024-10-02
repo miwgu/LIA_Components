@@ -12,11 +12,13 @@
     margin-left: 355px;
     margin-bottom: 5px;
     margin-top: 10px;
+    width: 300px; /* Set a width for the search field */
 
 }
 
 .companyPageContainer {
     padding: 20px;
+    text-align:center;
 }
 
 .cardContainer {

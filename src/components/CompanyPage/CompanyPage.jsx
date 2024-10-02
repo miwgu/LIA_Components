@@ -14,7 +14,7 @@ const CompanyPage = () => {
 
 <div> 
 
-    <h1 className = {styles.companyPage}> Company Page
+    <h1 className = {styles.companyPage}> Company List
     </h1>
     
     {/* <MoreButtonAtom/> */}
