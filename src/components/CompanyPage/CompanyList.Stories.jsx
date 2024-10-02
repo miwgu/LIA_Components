@@ -5,7 +5,11 @@ export default {
     title: 'LIA/CompanyPage/CompanyList',
     component: CompanyList,
 }
-const Template = (args) => <CompanyList {...args}/>
+
+function Template (args) {
+return <CompanyList {...args}/>
+}
+
 const data = {
 
     cardsData: [
@@ -20,15 +24,12 @@ const data = {
             description: "Student type: Backend Developer",
              
         },
-
-        {
-            title: 'Company 3',
-                description: "Student type: Frontend Developer",
-            }
     ],
 };
 
-export const DefaultCompanyList= Template.bind({})
-DefaultCompanyList.args = {
-    cardsData: data.cardsData,
+
+
+export const CompanyListComponent= Template.bind({})
+CompanyListComponent.args = {
+    ...data,
 }

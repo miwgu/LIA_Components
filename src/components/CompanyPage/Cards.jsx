@@ -1,23 +1,14 @@
 import React from 'react'
 import styles from './CompanyPage.module.css'
-import CompanyList from './CompanyList'
 
-const CompanyCards = () => {
-
-const cardsData = [
-  {
-      title: 'Company: Specsavers',
-      description: "Student Type: Frontend developer",
-      
-  },
-]
+const Cards = ({title, description}) => {
 
 return(
 
-<div className={styles.companyPageContainer}>
-<h1>Company Cards</h1>
-<CompanyList cardsData={cardsData} />
+<div className={styles.content}>
+<h1>{title}</h1>
+<p>{description} </p>
 </div>
 )  
 }
-  export default CompanyCards
+export default Cards
