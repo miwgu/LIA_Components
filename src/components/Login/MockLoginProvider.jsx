@@ -53,7 +53,7 @@ export const MockLoginProvider = ({children}) =>{
     {email: 'com1@example.com', password:'com%1', role:'company'}
   ]
 
-  const mockLoginFunc = (email, password) =>{
+  const mockLoginFunc = (email, password, navToPage) =>{
  
     const user = users.find(u=> u.email === email && u.password === password )
     console.log("user:", JSON.stringify(user))
