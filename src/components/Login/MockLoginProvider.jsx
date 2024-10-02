@@ -80,7 +80,9 @@ export const MockLoginProvider = ({children}) =>{
 
    const value = {
     user,
+    setUser,
     loggedIn,
+    setLoggedIn,
     mockLoginFunc,
     }; 
 
