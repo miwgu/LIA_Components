@@ -9,4 +9,4 @@ export {default as RegisterCompany} from "./components/RegisterCompany/RegisterC
 export {default as CompanyPage} from './components/CompanyPage/CompanyPage';
 export {default as StudentPage} from './components/StudentPage/StudentPage';
 //export {default as Home} from './components/HomeTest/Home';// replace after
-export {default as Home} from './components/HomePage/Home';
+export {default as Home} from './components/Home/Home';

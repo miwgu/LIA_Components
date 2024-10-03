@@ -1,8 +1,8 @@
 import React from 'react';
-import Home from './HomePage';
+import Home from './Home';
 
 export default {
-    title: 'LIA/Homepage/Home', 
+    title: 'LIA/Home/Home', 
     component: Home,
   };
   
