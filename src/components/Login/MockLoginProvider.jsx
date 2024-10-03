@@ -1,10 +1,4 @@
 import React, {createContext, useContext, useState, useEffect} from "react";
-import CompanyPage from "../CompanyPage/CompanyPage";
-import StudentPage from "../StudentPage/StudentPage";
-import RegisterStudent from "../RegisterStudent/RegisterStudent";
-import RegisterCompany from "../RegisterCompany/RegisterCompany";
-import Login from "../Login/Login";
-import Home  from "../HomeTest/Home";
 //import { PageNavigation } from "./PageNavigation";
 
 const MockLoginContext = createContext();
